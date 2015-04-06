@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-**Redis server needs to be run on localhost.**
+**Redis server needs to be listen on localhost : default port.**
 
 ```ruby
   require "active_redis"

@@ -11,12 +11,15 @@ Gem::Specification.new do |spec|
   spec.summary       = "Get redis relational"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = [
+    Dir['lib/**/*.rb'],
+    'README.md'
+  ].flatten
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.8"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 4.7.3"
+  
   spec.add_dependency "redis"
-
 end

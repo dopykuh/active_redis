@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'active_redis/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "activeredis"
+  spec.name          = "active_kv"
   spec.version       = ActiveRedis::VERSION
   spec.authors       = ["Tim Foerster"]
   spec.email         = ["timhormersdorf@googlemail.com"]
